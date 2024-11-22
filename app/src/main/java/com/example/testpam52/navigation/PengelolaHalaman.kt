@@ -30,3 +30,6 @@ fun MahasiswaApp(
         composable(
             route = Halaman.Splash.name
         ) {
+            SplashView(onMulaiButton = { navController.navigate(Halaman.Mahasiswa.name) })
+
+        }
