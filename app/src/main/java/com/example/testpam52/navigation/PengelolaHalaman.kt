@@ -18,3 +18,6 @@ fun MahasiswaApp(
     rencanaStudyViewModel: RencanaStudyViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
 ){
+    val mahasiswaUiState = mahasiswaViewModel.statusUI.collectAsState().value
+    var rencanaStudyState = rencanaStudyViewModel.krsStateUi.collectAsState().value
+}
