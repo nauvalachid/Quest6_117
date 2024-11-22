@@ -33,3 +33,12 @@ fun MahasiswaApp(
             SplashView(onMulaiButton = { navController.navigate(Halaman.Mahasiswa.name) })
 
         }
+        composable(route = Halaman.Mahasiswa.name) {
+            MahasiwaFormView (
+                onSubmitButtonClickned = {mahasiswaViewModel.saveDataSiswa(it)
+                    navController.navigate(
+                        Halaman.MataKuliah.name
+                    )},
+                onBackButtonClickned = {navController.popBackStack()}
+            )
+        }
