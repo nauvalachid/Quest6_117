@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 
 enum class Halaman {
     Splash,
@@ -26,3 +27,6 @@ fun MahasiswaApp(
         navController = navController,
         startDestination = Halaman.Splash.name
     ) {
+        composable(
+            route = Halaman.Splash.name
+        ) {
