@@ -1,3 +1,6 @@
 package com.example.testpam52.model
 
-data class RencanaStudy()
+data class RencanaStudy(
+    val namaMK : String ="",
+    val kelas : String = ""
+)
