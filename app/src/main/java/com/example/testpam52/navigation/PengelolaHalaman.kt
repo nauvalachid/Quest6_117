@@ -5,6 +5,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.example.testpam52.ui.view.screen.MahasiwaFormView
 
 enum class Halaman {
     Splash,
@@ -19,7 +20,9 @@ fun MahasiswaApp(
     mahasiswaViewModel: MahasiswaViewModel = viewModel(),
     rencanaStudyViewModel: RencanaStudyViewModel = viewModel(),
     navController: NavHostController = rememberNavController()
-){
+){9
+    +1
+
     val mahasiswaUiState = mahasiswaViewModel.statusUI.collectAsState().value
     var rencanaStudyState = rencanaStudyViewModel.krsStateUi.collectAsState().value
     NavHost(
