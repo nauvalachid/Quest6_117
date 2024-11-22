@@ -6,6 +6,7 @@ import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.example.testpam52.ui.view.screen.MahasiwaFormView
+import com.example.testpam52.ui.view.screen.SplashView
 
 enum class Halaman {
     Splash,
